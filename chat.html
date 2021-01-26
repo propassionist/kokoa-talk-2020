@@ -1,0 +1,166 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Chat w/ Nicco - Kokoa Clone</title>
+    <link rel="stylesheet" href="css/style.css" />
+    <style>
+      .status-bar {
+        background-color: #96b4c9;
+      }
+      body {
+        background-color: #96b4c9;
+      }
+      .chat{
+        display: flex;
+        flex-direction: column;
+      }
+      .chat__header{
+        display: flex;
+        justify-content: center;        
+      }
+      
+      .chat__header span{
+        text-align: center;
+        color: white;
+        font-size: 13px;
+        width: 165px;
+        background-color: #7C94A5;
+        border-radius: 10px;
+        padding: 7px 0px;        
+      }
+
+      .chat__body{
+        display: flex;
+        flex-direction: column;
+      }
+
+      .chat__row{
+        display: flex;
+      }
+
+      .chat__row-left > img{
+        width: 50px;
+        height: 50px;
+        border-radius: 20px;
+      }
+
+      .chat__row-left > div{
+        display: flex;
+        flex-direction: column;
+        padding-left: 8px   
+      }
+
+      .chat__row-left > div > div:first-child{
+        margin-bottom: 15px;
+      }
+
+      .chat__row__user-name{
+        font-weight: 600;
+        opacity: 0.6;
+      }
+
+      .chat__row__message{        
+        background-color: white;
+        border-radius: 10px;
+        padding: 7px 7px;
+      }
+
+      .chat__row-right{
+        display: flex;
+        justify-content: right;
+      }
+
+      .chat__row-right > span{
+        background-color: #FBDF00;
+      }
+    </style>
+  </head>
+  <body class="">
+    <div class="status-bar">
+      <div class="status-bar__column">
+        <span>No Service</span>
+        <!-- To Do: Wifi Icon -->
+        <i class="fas fa-wifi"></i>
+      </div>
+      <div class="status-bar__column">
+        <span>18:43</span>
+      </div>
+      <div class="status-bar__column">
+        <span>11%</span>
+        <!-- Battery Icon -->
+        <i class="fas fa-battery-quarter"></i>
+        <!-- Lightning Icon -->
+        <i class="fas fa-bolt"></i>
+      </div>
+    </div>
+
+    <!-- <header class="screen-header">
+      <div class="screen-header__icons">
+        <span
+          ><a href="more.html"><i class="fas fa-chevron-left"></i></a
+        ></span>
+      </div>
+      <h1 class="screen-header__title">Settings</h1>
+      <div class="screen-header__icons">
+        <span><i class="fas fa-search"></i></span>
+      </div>
+    </header> -->
+
+    <header class="alt-header">
+      <div class="alt-header__column">
+        <a href="chats.html"><i class="fas fa-chevron-left fa-2x"></i></a>
+      </div>
+      <div class="alt-header__column">
+        <h1 class="alt-header__title">Taiyoon Yoon</h1>
+      </div>
+      <div class="alt-header__column">
+        <span><i class="fas fa-search fa-lg"></i></span>
+        <span><i class="fas fa-bars fa-lg"></i></span>
+      </div>
+    </header>
+
+    <main class="main-screen chat">
+      <div class="chat__header">
+        <span>Tuesday, June 30, 2020</span>        
+      </div>
+      <div class="chat__body">
+        <div class="chat__row chat__row-left">
+          <img src="http://image.dongascience.com/Photo/2020/03/5bddba7b6574b95d37b6079c199d7101.jpg">
+          <div>
+            <div>
+              <span class="chat__row__user-name">Taiyoon</span>
+            </div>
+            <div>
+              <span class="chat__row__message">Hi!</span>
+            </div>
+          </div>
+        </div>
+        <div class="chat__row chat__row-right">                    
+          <span class="chat__row__message">Hi</span>
+        </div>
+      </div>
+      <div class="chat__bottom">
+        <div class="chat__input">
+          <img src="">
+          <div class="chat__input-box">
+            <span>Hi!</span>
+            <div class="chat__input-box__icons">
+              <i class="far fa-smile"></i>
+              <i class="fas fa-arrow-circle-up"></i>
+            </div>
+          </span>
+        </div>
+        <div class="chat__keys">
+          
+        </div>
+      </div>
+    </main>
+
+    <script
+      src="https://kit.fontawesome.com/4296e68beb.js"
+      crossorigin="anonymous"
+    ></script>
+  </body>
+</html>
